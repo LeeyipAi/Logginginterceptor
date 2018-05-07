@@ -1,5 +1,6 @@
 # Logginginterceptor
 [![](https://jitpack.io/v/LeeyipAi/Logginginterceptor.svg)](https://jitpack.io/#LeeyipAi/Logginginterceptor)
+
 How to
 To get a Git project into your build:
 
@@ -20,7 +21,7 @@ Add it in your root build.gradle at the end of repositories:
 Step 2. Add the dependency
 
 	dependencies {
-	        implementation 'com.github.LeeyipAi:Logginginterceptor:1.0.0'
+	        implementation 'com.github.LeeyipAi:Logginginterceptor:1.0.1'
 	}
 Step 3. Add LoggingInterceptor 	:
 	 
