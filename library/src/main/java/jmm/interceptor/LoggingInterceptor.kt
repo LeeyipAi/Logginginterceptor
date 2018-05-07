@@ -86,9 +86,9 @@ class LoggingInterceptor private constructor(private val builder: LoggingInterce
             }
 
             if (subtypeIsNotFile(subtype)) {
-                val bodyString = Logger.getJsonString(responseBody.string())
-                Logger.printJsonResponse(builder, chainMs, isSuccessful, code, header, responseBody.string(), segmentList)
-                body = ResponseBody.create(contentType, bodyString)
+                val bodyString  = responseBody.string()
+                Logger.printJsonResponse(builder, chainMs, isSuccessful, code, header, bodyString, segmentList)
+                body = ResponseBody.create(contentType, Logger.getJsonString(bodyString))
             } else {
                 Logger.printFileResponse(builder, chainMs, isSuccessful, code, header, segmentList)
                 return response
