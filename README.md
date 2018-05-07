@@ -1,4 +1,5 @@
 # Logginginterceptor
+[![](https://jitpack.io/v/LeeyipAi/Logginginterceptor.svg)](https://jitpack.io/#LeeyipAi/Logginginterceptor)
 How to
 To get a Git project into your build:
 
