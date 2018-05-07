@@ -21,3 +21,12 @@ Step 2. Add the dependency
 	dependencies {
 	        implementation 'com.github.LeeyipAi:Logginginterceptor:1.0.0'
 	}
+Step 3. Add LoggingInterceptor 	:
+	new LoggingInterceptor.Builder()
+                .loggable(BuildConfig.DEBUG)
+                .request()
+                .requestTag("Request")
+                .response()
+                .responseTag("Response")
+                .addHeader("version", BuildConfig.VERSION_NAME)
+                .build();
