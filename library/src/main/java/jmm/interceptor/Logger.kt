@@ -85,7 +85,7 @@ class Logger {
             builder.append("  ").append(Logger.LINE_SEPARATOR).append(Logger.TOP_BORDER).append(Logger.LINE_SEPARATOR)
             builder.append(getResponse(headers, chainMs, code, isSuccessful, segments))
 
-            builder.append("║ " + bodyString +  LINE_SEPARATOR)
+            Log.i(tag, "ResponseBody:" + bodyString)
 
             val responseBody = "║ "+LINE_SEPARATOR + "║ Body:" + LINE_SEPARATOR
 
